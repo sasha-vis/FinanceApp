@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #1957C7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+.app {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.page_start,
+.page_card {
+    height: 100%;
+}
+]
+
+.page_start .main,
+.page_start .container {
+    height: 100%;
+}
+
+.page_start {
+    background: url(../assets/images/bg_circle.svg) bottom -500px left -100px/1024px auto no-repeat,
+                url(../assets/images/bg_circle.svg) top -50px right -50px no-repeat;
+}
+
+.page_start .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.page_start_image {
+    width: 340px;
+    height: 340px;
+
+    background-image: url(../assets/images/page_start_image.png);
+    background-size: contain;
+    background-position: center;
+}
+
+.page_start h1 {
+    font-size: 32px;
+}
+
+.page_start p {
+    color: #fff;
+}
+
+.page_start_button {
+    border: 0;
+    border-radius: 30px;
+    background-color: #fff;
+    padding: 15px 40px;
+
+    font-weight: bold;
+    color: #3873DD;
+    cursor: pointer;
+}
+
+.page_card {
+    background: url(../assets/images/bg_circle.svg) top 100px left -100px/768px auto no-repeat,
+                url(../assets/images/bg_circle.svg) top -50px right -50px no-repeat;
+}
+
+.page_card .header,
+.page_transaction .header {
+    margin: 40px 0;
+}
+
+.page_card .header h1,
+.page_transaction .header h1 {
+    font-size: 24px;
+}
+
+.page_card_balance {
+    position: relative;
+}
+
+.page_card_balance h3 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.page_card_balance .balance {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.page_card_add_button {
+    border: 0;
+    border-radius: 20px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.6);
+
+    font-size: 48px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.page_card_photo {
+    width: 60%;
+    margin-top: 40px;
+}
+
+.page_card_photo img {
+    width: 100%;
+}
+
+.page_transaction {
+    background-color: #fff;
+    color: #000;
+}
+
+.page_transaction .header .container {
+    position: relative;
+    text-align: center;
+}
+
+.page_transaction .main {
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+.page_transaction_back_button {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    border: 0;
+    background-color: transparent;
+
+    font-family: monospace;
+    font-size: 24px;
+    font-weight: bold;
+
+    padding: 10px;
+    cursor: pointer;
+}
+
+.page_transaction_list {
+    list-style: none;
+    height: 100%;
+    padding-top: 30px;
+}
+
+.page_transaction_list li {
+    display: flex;
+    align-items: center;
+
+    padding: 15px;
+    box-shadow: 0 10px 40px #ccc;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.page_transaction_list li > * {
+    flex: none;
+}
+
+.page_transaction_list .icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    background-image: url(https://via.placeholder.com/48);
+    background-size: cover;
+    margin-right: 20px;
+}
+
+.page_transaction_list .name,
+.page_transaction_list .cost {
+    font-weight: bold;
+}
+
+.page_transaction_list .name,
+.page_transaction_list .date {
+    font-size: 14px;
+}
+
+.page_transaction_list .cost {
+    margin-left: auto;
+}
