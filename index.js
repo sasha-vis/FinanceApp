@@ -1,19 +1,8 @@
-import DOM from './components/Dom.js';
+import render from './components/Router.js';
+
 import './components/Head.js';
+import DOM from './components/Dom.js';
 
-import startPage from './components/StartPage.js';
-import pageCard from './components/PageCard.js';
-import pageTransaction from './components/PageTransaction.js';
+render();
 
-class App {
-    constructor() {
-        
-    };
-
-    render() {
-        DOM.addClass(pageTransaction, 'app');
-        DOM.append(document.body, pageTransaction);
-    };
-};
-
-new App().render();
+DOM.on(window, 'hashchange', render);
