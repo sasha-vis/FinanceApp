@@ -5,7 +5,6 @@ const render = function () {
     document.body.innerHTML = '';
 
     if (location.href.indexOf(`.html`) != -1) location.href = location.origin;
-    console.log(location.href);
 
     const page = location.hash.length > 0 ? location.hash.substr(1) : '';
     const infoModule = {

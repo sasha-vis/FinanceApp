@@ -28,7 +28,7 @@ class PageTransaction {
             <header class="header">
                 <div class="container">
 
-                    <button class="page_transaction_back_button" onClick="location.href='/#cards'"><</button>
+                    <button class="page_transaction_back_button" onClick="/FinanceApp/#transactions"><</button>
                     <h1>Transactions</h1>
 
                 </div>
