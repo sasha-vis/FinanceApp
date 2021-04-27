@@ -24,15 +24,11 @@ class PageTransaction {
             `;
         });
 
-        const changeLocation = function () {
-            location.href = '/FinanceApp/#cards';
-        }
-
         DOM.html(this.element, `
             <header class="header">
                 <div class="container">
 
-                    <button class="page_transaction_back_button" onClick='${changeLocation}'><</button>
+                    <button class="page_transaction_back_button" onClick="location.href='/FinanceApp/#cards'"><</button>
                     <h1>Transactions</h1>
 
                 </div>
