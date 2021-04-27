@@ -14,7 +14,7 @@ class PageCardBalance {
             <h3>Your balance</h3>
             <div class="balance">$${this.balance}</div>
 
-            <a class="to_transactions" href="/#transactions">All transactions</a>
+            <a class="to_transactions" href="/FinanceApp/#transactions">All transactions</a>
         `);
 
         const btnAddTrans = DOM.create('button');
